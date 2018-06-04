@@ -2,7 +2,7 @@
 	var o={x:1, y:0};
 
 	
-	alert(  "======Test typeof ========" +"\n" +
+	console.log(  "======Test typeof ========" +"\n" +
 			"Type of String: " + (typeof "dsf") + "\n" +
 	    	"Type of null: " + (typeof null) + "\n" +
 	    	"Type of true|false: " + (typeof true) + "\n" + 
@@ -12,4 +12,4 @@
 			
 	);
 	function a(){};
-})(this);
+})();
