@@ -78,3 +78,35 @@ instance2.sayName()
 instance2.sayAge()
 
 /**==== Prototypal Inheritance ====*/
+function object(o){
+    function F(){}
+    F.prototype = o;
+        return new F();
+}
+
+var person = {
+    name: "Nicholas",
+    friends: ["Shelby", "Court", "Van"]
+}
+
+var anotherPerson = object(person)
+anotherPerson.name = "Greg"
+anotherPerson.friends.push("Rob")
+
+var yetAnotherPerson = object(person)
+yetAnotherPerson.friends.push("Barbie")
+
+console.log("---- Prototypal Patten -----")
+console.log(person.friends)
+
+/**===== Object.create() offically support prototpyal pattern ====*/
+
+var anotherPerson = Object.create(person)
+anotherPerson.name="Greg"
+anotherPerson.friends.push("Rob")
+
+var yetAnotherPerson = Object.create(person)
+yetAnotherPerson.name ="Greg"
+yetAnotherPerson.friends.push("Barbie")
+console.log("\n---- Prototypal Patten  Object.create()-----")
+console.log(person.friends)

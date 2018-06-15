@@ -1,3 +1,12 @@
+/**==== The Object Type ====*/
+/* constructor - The function taht was used to create the object. in below example, the function is Object() function */
+
+var o = new Object()
+
+
+
+
+
 /**==== Prototype Review =====**/
 /**
  * Each function have a prototype */
@@ -12,6 +21,7 @@ Bee.prototype={
 
 console.log("\n1.----Bee.prototype:")
 console.log(Bee.prototype)
+
 console.log("\n2.----Bee.prototype.constructor:")
 console.log(Bee.prototype.constructor)
 
@@ -19,6 +29,7 @@ console.log(Bee.prototype.constructor)
 var bee = new Bee()
 console.log ("\n3.---- bee.contructor----")
 console.log(bee.constructor)
+
 console.log ("\n4.---- bee.prototype----")
 console.log(bee.prototype)
 console.log ("\n5.---- bee.contructor.prototype----")
